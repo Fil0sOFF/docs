@@ -1662,6 +1662,13 @@ if (typeof window !== 'undefined' && window.location.href.includes('127.0.0.1'))
 </li>
       
         <li class="md-nav__item">
+  <a href="#example-loading-a-rom-and-libretro-core-with-steam" class="md-nav__link">
+    Example: loading a ROM and libretro core with Steam
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#verbose-logging-output" class="md-nav__link">
     Verbose logging output
   </a>
@@ -7271,6 +7278,13 @@ if (typeof window !== 'undefined' && window.location.href.includes('127.0.0.1'))
 </li>
       
         <li class="md-nav__item">
+  <a href="#example-loading-a-rom-and-libretro-core-with-steam" class="md-nav__link">
+    Example: loading a ROM and libretro core with Steam
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#verbose-logging-output" class="md-nav__link">
     Verbose logging output
   </a>
@@ -7348,6 +7362,11 @@ if (typeof window !== 'undefined' && window.location.href.includes('127.0.0.1'))
 flatpak run org.libretro.RetroArch/x86_64/stable -L /home/MYUSERNAME/.var/app/org.libretro.RetroArch/config/retroarch/cores/nestopia_libretro.so Tetris.nes
 </code></pre></div></td></tr></table></div>
 
+<h4 id="example-loading-a-rom-and-libretro-core-with-steam">Example: loading a ROM and libretro core with Steam<a class="headerlink" href="#example-loading-a-rom-and-libretro-core-with-steam" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code> steam -applaunch 1118310 -L &quot;/path/to/steamapps/common/RetroArch/cores/nestopia_libretro.so&quot; &quot;/path/to/Tetris.nes&quot;
+</code></pre></div></td></tr></table></div>
+
+<p>Content filenames require no spaces, as there is an issue with Steam passing through command line arguments containing spaces.</p>
 <h2 id="verbose-logging-output">Verbose logging output<a class="headerlink" href="#verbose-logging-output" title="Permanent link">&para;</a></h2>
 <p>To get a better idea on what's going on, use the <code>--verbose</code> flag. If you want to report a bug, it is <strong>vital</strong> that this log is included.</p>
 <h2 id="using-a-config-file">Using a config file<a class="headerlink" href="#using-a-config-file" title="Permanent link">&para;</a></h2>
@@ -7368,7 +7387,7 @@ flatpak run org.libretro.RetroArch/x86_64/stable -L /home/MYUSERNAME/.var/app/or
   <small>
     
       Last update:
-      2021-01-14
+      2022-06-22
     
   </small>
 </div>
