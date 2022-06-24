@@ -7244,8 +7244,12 @@ if (typeof window !== 'undefined' && window.location.href.includes('127.0.0.1'))
 <p>In addition to the requirement(s) listed above, you will also need Visual Studio 2019 installed in order for the following to work.</p>
 <p>Enter the following commands (from the SwanStation source directory):</p>
 <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>cmake -G&quot;Visual Studio 16 2019&quot; -A &quot;x64&quot; -DBUILD_LIBRETRO_CORE=ON -DCMAKE_BUILD_TYPE=Release -DENABLE_CHEEVOS=OFF . -B&quot;build\windows-x86_64&quot;
-cmake --build build/windows-x86_64 --target duckstation_libretro --config Release
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>mkdir build
+cd build
+cmake -G &quot;Visual Studio 16 2019&quot; -A &quot;x64&quot; -DCMAKE_BUILD_TYPE=Release ..
+cmake --build . --target swanstation_libretro --config Release
 </code></pre></div></td></tr></table></div>
 
   <hr>
@@ -7253,7 +7257,7 @@ cmake --build build/windows-x86_64 --target duckstation_libretro --config Releas
   <small>
     
       Last update:
-      2021-10-07
+      2022-06-24
     
   </small>
 </div>
