@@ -2612,6 +2612,33 @@ if (typeof window !== 'undefined' && window.location.href.includes('127.0.0.1'))
     Keyboard
   </a>
   
+    <nav class="md-nav" aria-label="Keyboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-128" class="md-nav__link">
+    Enterprise 128
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#videoton-tvc" class="md-nav__link">
+    Videoton TVC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amstrad-cpc" class="md-nav__link">
+    Amstrad CPC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -7409,6 +7436,33 @@ if (typeof window !== 'undefined' && window.location.href.includes('127.0.0.1'))
     Keyboard
   </a>
   
+    <nav class="md-nav" aria-label="Keyboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enterprise-128" class="md-nav__link">
+    Enterprise 128
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#videoton-tvc" class="md-nav__link">
+    Videoton TVC
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amstrad-cpc" class="md-nav__link">
+    Amstrad CPC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -7437,6 +7491,8 @@ if (typeof window !== 'undefined' && window.location.href.includes('127.0.0.1'))
 
 
 <h1 id="enterprise-64128-ep128emu">Enterprise - 64/128 (ep128emu)<a class="headerlink" href="#enterprise-64128-ep128emu" title="Permanent link">&para;</a></h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vpqkDRUgwpU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
 <p>Leverage the convenience of libretro/retroarch to emulate the Z80 based home computers that the original ep128emu supports - that is, Enterprise 64/128, Videoton TVC, Amstrad CPC and ZX Spectrum. Focus is on Enterprise and TVC.</p>
 <p>The ep128emu core has been authored by:<br />
@@ -7821,7 +7877,7 @@ Settings with (Restart) means that core has to be closed for the new setting to 
 <tr>
 <td><img alt="" src="../../image/retropad/retro_b.png" /></td>
 <td>-</td>
-<td>In-game key required for other action</td>
+<td>In-game key required for other action (if any)</td>
 </tr>
 <tr>
 <td><img alt="" src="../../image/retropad/retro_select.png" /></td>
@@ -7866,9 +7922,17 @@ Settings with (Restart) means that core has to be closed for the new setting to 
 </tbody>
 </table>
 <h2 id="keyboard">Keyboard<a class="headerlink" href="#keyboard" title="Permanent link">&para;</a></h2>
+<h3 id="enterprise-128">Enterprise 128<a class="headerlink" href="#enterprise-128" title="Permanent link">&para;</a></h3>
 <p>The ep128emu core takes the Enterprise UK keyboard as a basis:<br />
 <img alt="" src="../../image/core/ep128emu/enterprise-128-uk-keyboard.png" /></p>
-<p>Most mappings are straightforward positionally from an ISO UK keyboard. Exceptions are marked in the following table:</p>
+<p>Most mappings are straightforward positionally from an ISO UK keyboard:<br />
+- Dark green: natural mapping, both position and function matches nicely<br />
+- Light green: either position or function is slightly different<br />
+- Yellow: function is different<br />
+- Red: extra mapping<br />
+- Dark grey: keys intentionally reserved for RetroArch / OS functions</p>
+<p><img alt="" src="../../image/core/ep128emu/iso-mapping-for-enterprise-128.png" /></p>
+<p>Exceptions are marked in the following table:</p>
 <table>
 <thead>
 <tr>
@@ -7878,32 +7942,44 @@ Settings with (Restart) means that core has to be closed for the new setting to 
 </thead>
 <tbody>
 <tr>
-<td>Keyboard Backspace</td>
-<td>Erase</td>
+<td>Keyboard F9</td>
+<td>Hold</td>
+</tr>
+<tr>
+<td>Keyboard F10</td>
+<td>Stop</td>
 </tr>
 <tr>
 <td>Keyboard Pause</td>
 <td>Stop</td>
 </tr>
 <tr>
-<td>Keyboard Quote '</td>
-<td>: (colon)</td>
+<td>Keyboard Backquote `</td>
+<td>Escape (alternative mapping)</td>
 </tr>
 <tr>
 <td>Keyboard Equals =</td>
 <td>^ (caret)</td>
 </tr>
 <tr>
+<td>Keyboard Backspace</td>
+<td>Erase</td>
+</tr>
+<tr>
 <td>Keyboard Left Bracket [</td>
 <td>@ (at)</td>
 </tr>
 <tr>
-<td>Keyboard Backslash \</td>
-<td>] (right bracket)</td>
-</tr>
-<tr>
 <td>Keyboard Right Bracket ]</td>
 <td>[ (left bracket)</td>
+</tr>
+<tr>
+<td>Keyboard Quote '</td>
+<td>: (colon)</td>
+</tr>
+<tr>
+<td>Keyboard Backslash \</td>
+<td>] (right bracket) (shown as # in ISO map)</td>
 </tr>
 <tr>
 <td>Keyboard Oem 102</td>
@@ -7914,8 +7990,131 @@ Settings with (Restart) means that core has to be closed for the new setting to 
 <td>\ (alternative mapping)</td>
 </tr>
 <tr>
+<td>Keyboard Delete</td>
+<td>Del</td>
+</tr>
+<tr>
+<td>Keyboard Insert</td>
+<td>Ins</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 0</td>
+<td>External joystick 1 fire</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 2</td>
+<td>External joystick 1 down</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 4</td>
+<td>External joystick 1 left</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 6</td>
+<td>External joystick 1 right</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 8</td>
+<td>External joystick 1 up</td>
+</tr>
+</tbody>
+</table>
+<h3 id="videoton-tvc">Videoton TVC<a class="headerlink" href="#videoton-tvc" title="Permanent link">&para;</a></h3>
+<p>The Videoton TVC has a layout that is somewhat similar to ISO Hungarian layout:<br />
+<img alt="" src="../../image/core/ep128emu/videoton-tvc-keyboard.png" /><br />
+<img alt="" src="../../image/core/ep128emu/iso-mapping-for-videoton-tvc.png" /></p>
+<p>Since TVC has several extra keys, but no function keys, F-row is used as replacement for those.</p>
+<table>
+<thead>
+<tr>
+<th>RetroKeyboard Inputs</th>
+<th>TVC keyboard input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keyboard F1</td>
+<td>@</td>
+</tr>
+<tr>
+<td>Keyboard F2</td>
+<td>;</td>
+</tr>
+<tr>
+<td>Keyboard F3</td>
+<td>&lt;</td>
+</tr>
+<tr>
+<td>Keyboard F4</td>
+<td>\</td>
+</tr>
+<tr>
+<td>Keyboard F5</td>
+<td>*</td>
+</tr>
+<tr>
+<td>Keyboard F6</td>
+<td>^</td>
+</tr>
+<tr>
+<td>Keyboard F7</td>
+<td>[</td>
+</tr>
+<tr>
+<td>Keyboard F8</td>
+<td>]</td>
+</tr>
+<tr>
+<td>Keyboard F9</td>
+<td>*</td>
+</tr>
+<tr>
+<td>Keyboard F10</td>
+<td>í</td>
+</tr>
+<tr>
 <td>Keyboard Backquote `</td>
-<td>Escape (alternative mapping)</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Keyboard 0</td>
+<td>ö</td>
+</tr>
+<tr>
+<td>Keyboard Minus -</td>
+<td>ü</td>
+</tr>
+<tr>
+<td>Keyboard Equals =</td>
+<td>ó</td>
+</tr>
+<tr>
+<td>Keyboard Left Bracket [</td>
+<td>ő</td>
+</tr>
+<tr>
+<td>Keyboard Right Bracket ]</td>
+<td>ú</td>
+</tr>
+<tr>
+<td>Keyboard Semicolon ;</td>
+<td>é</td>
+</tr>
+<tr>
+<td>Keyboard Quote '</td>
+<td>á</td>
+</tr>
+<tr>
+<td>Keyboard Backslash \</td>
+<td>ű</td>
+</tr>
+<tr>
+<td>Keyboard Oem 102</td>
+<td>í</td>
+</tr>
+<tr>
+<td>Keyboard Home</td>
+<td>ű (alternative mapping)</td>
 </tr>
 <tr>
 <td>Keyboard Delete</td>
@@ -7926,16 +8125,120 @@ Settings with (Restart) means that core has to be closed for the new setting to 
 <td>Ins</td>
 </tr>
 <tr>
+<td>Keyboard Keypad 0</td>
+<td>External joystick 1 fire</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 2</td>
+<td>External joystick 1 down</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 4</td>
+<td>External joystick 1 left</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 6</td>
+<td>External joystick 1 right</td>
+</tr>
+<tr>
+<td>Keyboard Keypad 8</td>
+<td>External joystick 1 up</td>
+</tr>
+</tbody>
+</table>
+<h3 id="amstrad-cpc">Amstrad CPC<a class="headerlink" href="#amstrad-cpc" title="Permanent link">&para;</a></h3>
+<p>The Amstrad CPC 464/664 and 6128 fit well to ISO UK layout, with only slight differences:<br />
+<img alt="" src="../../image/core/ep128emu/amstrad-cpc-464-keyboard.png" /><br />
+<img alt="" src="../../image/core/ep128emu/amstrad-cpc-6128-keyboard.png" /><br />
+<img alt="" src="../../image/core/ep128emu/iso-mapping-for-amstrad-cpc.png" /></p>
+<p>Function key row is mapped to Fn-array. Extra mappings are marked in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>RetroKeyboard Inputs</th>
+<th>CPC keyboard input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Keyboard F1</td>
+<td>Fn1</td>
+</tr>
+<tr>
+<td>Keyboard F2</td>
+<td>Fn2</td>
+</tr>
+<tr>
+<td>Keyboard F3</td>
+<td>Fn3</td>
+</tr>
+<tr>
+<td>Keyboard F4</td>
+<td>Fn4</td>
+</tr>
+<tr>
+<td>Keyboard F5</td>
+<td>Fn5</td>
+</tr>
+<tr>
+<td>Keyboard F6</td>
+<td>Fn6</td>
+</tr>
+<tr>
+<td>Keyboard F7</td>
+<td>Fn7</td>
+</tr>
+<tr>
+<td>Keyboard F8</td>
+<td>Fn8</td>
+</tr>
+<tr>
 <td>Keyboard F9</td>
-<td>Hold</td>
+<td>Fn9</td>
 </tr>
 <tr>
 <td>Keyboard F10</td>
-<td>Stop</td>
+<td>Fn0</td>
+</tr>
+<tr>
+<td>Keyboard F11</td>
+<td>Fn Dot (.)</td>
+</tr>
+<tr>
+<td>Keyboard Keypad Enter</td>
+<td>Fn Enter</td>
+</tr>
+<tr>
+<td>Keyboard Oem 102</td>
+<td>\</td>
+</tr>
+<tr>
+<td>Keyboard Home</td>
+<td>\ (alternative mapping)</td>
+</tr>
+<tr>
+<td>Keyboard Delete</td>
+<td>Del</td>
+</tr>
+<tr>
+<td>Keyboard Insert</td>
+<td>Copy</td>
+</tr>
+<tr>
+<td>Keyboard Left Alt</td>
+<td>Copy (alternative mapping)</td>
+</tr>
+<tr>
+<td>Keyboard Right Alt</td>
+<td>Fn Dot (alternative mapping)</td>
 </tr>
 <tr>
 <td>Keyboard Keypad 0</td>
 <td>External joystick 1 fire</td>
+</tr>
+<tr>
+<td>Keyboard Keypad Period .</td>
+<td>External joystick 1 fire 2</td>
 </tr>
 <tr>
 <td>Keyboard Keypad 2</td>
@@ -7971,7 +8274,7 @@ Settings with (Restart) means that core has to be closed for the new setting to 
   <small>
     
       Last update:
-      2022-06-30
+      2022-07-11
     
   </small>
 </div>
